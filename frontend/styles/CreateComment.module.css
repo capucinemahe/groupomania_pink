@@ -1,0 +1,55 @@
+.container_create_comment {
+  width: 100%;
+  border: 0.1rem solid rgb(234, 189, 182);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.create_comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input_comment {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_input_comment::placeholder {
+  color: black;
+  opacity: 0.9;
+}
+
+.btn_comment {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 0.6rem;
+}
+
+.btn_post_comment {
+  border: none;
+  background: black;
+  opacity: 0.8;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de smartphone */
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .container_create_comment {
+    width: 100%;
+  }
+
+  .form_input_comment {
+    margin: 0.5rem;
+  }
+}

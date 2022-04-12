@@ -1,0 +1,229 @@
+.container_home {
+width: 100%;
+}
+
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 0.7rem;
+}
+
+/* MODALE  */
+
+.modal_container {
+  position: fixed;
+  top: 20rem;
+  left: 10rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+/* CSS DES POSTS  */
+
+.container_onepost {
+  margin: auto;
+  width: 90%;
+  border: 0.15rem solid rgb(107, 107, 107);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_post {
+  display: flex;
+}
+
+.user_image {
+  width: 3.5rem;
+  height: 4rem;
+}
+
+.card_content_right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.user_name {
+  color: rgb(234, 189, 182);
+}
+
+.post_attachment {
+  width: 80%;
+}
+
+.icone_comment {
+  width: 2.2rem;
+  border: none;
+  background-color: white;
+}
+
+.icones_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.icone_modif {
+  width: 2.2rem;
+  border: none;
+  background-color: white;
+}
+
+.icone_poubelle {
+  width: 1.8rem;
+  border: none;
+  background-color: white;
+}
+
+.under_post {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS DES COMMENTS */
+
+.container_comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment_card {
+  border: 0.15rem solid rgb(234, 189, 182);
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment_card_top {
+  display: flex;
+  flex-direction: row;
+}
+.comment_user_name {
+  color: rgb(234, 189, 182);
+}
+
+.comment_user_image {
+  width: 3.5rem;
+  height: 4rem;
+}
+
+.comment_right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.icones_comment {
+  display: flex;
+  justify-content: flex-end;
+}
+.icone_comment_modif {
+  width: 2.2rem;
+  border: none;
+  background-color: white;
+}
+.icone_trash_comment {
+  width: 1.8rem;
+  border: none;
+  background-color: white;
+}
+
+/* PAGE NOT FOUND CSS */
+
+.NF_container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.NF_title {
+  color: black;
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de tablette */
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .comment_card {
+    width: 100%;
+  }
+  .comment_right {
+    padding-left: 0.7rem;
+    padding-right: 0.5rem;
+  }
+
+    /* MODALE  */
+
+.modal_container {
+  position: fixed;
+  top: 30rem;
+  left: 5rem;
+}
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de smartphone */
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+
+  .container_onepost {
+    padding: 1rem;
+  }
+  .comment_card {
+    width: 100%;
+  }
+
+  .card_container {
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content_post {
+    display: flex;
+  }
+
+  .card_content_right {
+    padding-left: 0.8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .under_post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* CSS DES COMMENTS  */
+
+  .comment_card {
+    padding: 0.3rem;
+  }
+
+  .comment_right {
+    padding-left: 0.7rem;
+    padding-right: 0.5rem;
+  }
+
+  /* MODALE  */
+
+.modal_container {
+  position: fixed;
+  top: 20rem;
+  left: 1rem;
+}
+
+}

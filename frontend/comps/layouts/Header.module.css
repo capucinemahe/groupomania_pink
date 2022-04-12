@@ -1,0 +1,98 @@
+/* COMPOSANT HEADER  */
+
+.header_home {
+  width: 100%;
+  height: 8rem;
+  position: relative;
+}
+
+.nav_icones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 2rem 0 2rem;
+}
+
+.icones_left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icone_home {
+  width: 2.5rem;
+}
+.icone_profile {
+  margin-left: 1rem;
+  width: 2.5rem;
+}
+.icone_logout {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  width: 2.5rem;
+  border: none;
+  background-color: white;
+}
+
+.logopink {
+  max-width: 35%;
+  min-width: 25%;
+  margin: auto;
+  position: absolute;
+  top: 0.1rem;
+  left: 38%;
+}
+
+@media screen and (min-width: 1250px) {
+  .header_home {
+    height: 18rem;
+  }
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de tablette */
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .header_home {
+    height: 8rem;
+  }
+  .icone_home {
+    width: 1.8rem;
+  }
+  .icone_profile {
+    width: 1.8rem;
+  }
+  .icone_logout {
+    width: 1.8rem;
+  }
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de smartphone */
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .header_home {
+    height: 6rem;
+    width: 100%;
+  }
+
+  .nav_icones {
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  .icone_home {
+    width: 1.6rem;
+  }
+  .icone_profile {
+    margin-left: 0.7rem;
+    width: 1.6rem;
+  }
+  .icone_logout {
+    width: 1.6rem;
+  }
+  .logopink {
+    position: absolute;
+    top: 2rem;
+    left: 35%;
+    min-width: 35%;
+  }
+}

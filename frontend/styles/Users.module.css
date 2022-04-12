@@ -1,0 +1,88 @@
+.container_profile_user {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_names {
+  color: #bb4e55;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.user_image {
+  margin-top: 2rem;
+  width: 10rem;
+}
+
+.input_user_image {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_modify_image {
+  border: none;
+  background-color: #ffd7d7;
+  margin: 2rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.input_user_image {
+  font-size: 0.7rem;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_bio {
+  width: 20rem;
+  height: 5rem;
+  border: solid 0.1rem rgb(210, 208, 208);
+  padding: 1rem;
+  border-radius: 1.3rem;
+  box-shadow: 5px 5px 5px rgb(215, 214, 214);
+}
+
+.btn_bio {
+  border: none;
+  background-color: #ffd7d7;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 13rem;
+  border-radius: 1.3rem;
+}
+
+.btn_delete_account {
+  margin-top: 2rem;
+  border: none;
+  background-color: white;
+  color: #bb4e55;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .user_bio {
+    width: 15rem;
+  }
+}

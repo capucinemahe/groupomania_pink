@@ -1,0 +1,97 @@
+.container {
+  padding: 2rem 2rem;
+  margin: auto;
+}
+
+.logopink {
+  height: auto;
+  width: 20%;
+  margin: auto;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.title {
+  color: rgb(234, 189, 182);
+  font-size: 1.3rem;
+}
+
+.input_container {
+  border: none;
+}
+
+.form_input {
+  border: none;
+  padding: 1rem 1rem;
+  border-bottom: solid 0.05rem;
+  width: 22rem;
+}
+
+.btn {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 22rem;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn_login {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 22rem;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.link_form {
+  text-align: center;
+  color: rgb(192, 146, 134);
+}
+
+.link_form p {
+  text-align: center;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.form_last {
+  color: grey;
+  font-size: 0.55rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de tablette */
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de smartphone */
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .form_input {
+    width: 16rem;
+    margin-left: 2rem;
+  }
+
+  .btn {
+    width: 20rem;
+  }
+
+  .logopink {
+    width: 50%;
+  }
+}

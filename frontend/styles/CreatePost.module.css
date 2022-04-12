@@ -1,0 +1,110 @@
+.container_create {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.create_post {
+  width: 90%;
+  border: 0.19rem solid rgb(234, 189, 182);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_input::placeholder {
+  color: black;
+  opacity: 0.9;
+}
+
+.container_icones {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+.input_attachment {
+  width: 7rem;
+  opacity: 0;
+}
+.icone_attachment {
+  position: absolute;
+  left:90%;
+  bottom: 25%;
+  width: 2rem;
+  z-index: -3;
+}
+
+.btn_submit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 1rem 1rem 0;
+}
+
+.btn_post {
+  border: none;
+  background: rgb(234, 189, 182);
+  opacity: 0.8;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  .icone_attachment {
+    position: absolute;
+    left:87%;
+    bottom: 25%;
+  }
+  
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de tablette */
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+  .icone_attachment {
+    position: absolute;
+    left:83%;
+    bottom: 25%;
+  }
+  
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de smartphone */
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .form_input {
+    font-size: 1rem;
+  }
+
+  .icone_attachment {
+    position: absolute;
+    left:75%;
+    bottom: 25%;
+  }
+  
+}
