@@ -65,21 +65,22 @@ export default function Profile() {
   };
 
   const deleteUserAccount = () => {
-    confirm("voulez-vous vraiment supprimer votre profil ?");
-
-    axios({
-      method: "DELETE",
-      url: `http://localhost:8080/api/auth/users/${user.id}`,
-      headers: apiHeaders().headers,
-    })
-      .then((res) => {
-        if (res.status === 200) {
-          router.push("/login");
-        }
+    let res = confirm("voulez-vous vraiment supprimer votre profil ?");
+    if (res) {
+      axios({
+        method: "DELETE",
+        url: `http://localhost:8080/api/auth/users/${user.id}`,
+        headers: apiHeaders().headers,
       })
-      .catch((err) => {
-        console.log(err);
-      });
+        .then((res) => {
+          if (res.status === 200) {
+            router.push("/login");
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   };
 
   return user ? (
